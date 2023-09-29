@@ -1,0 +1,16 @@
+@mixin sizes($alto, $ancho){
+    width: $ancho;
+    height: $alto;
+}
+@mixin background-image($img, $backposition, $backrepeat, $backsize, $position){
+    background-image: url($img);
+    background-position: $backposition;
+    background-repeat: $backrepeat;
+    background-size: $backsize;
+    position: $position;
+}
+@mixin fuente($fuente, $tamanio, $color){
+    font-family: $fuente;
+    font-size: $tamanio;
+    color:$color;
+}

@@ -1,0 +1,47 @@
+.nav-header{
+    @include fuente('Poppins', $fontSizeChica, black);
+    a {
+        color: black;
+    }
+    .nav-content{
+        background-color: aqua;
+        height: 110px;
+        align-items: center;
+        .nav-logo{
+            justify-self: start;
+            align-self: center;
+            background-color: bisque;
+            @include sizes(50%, 20%);
+        }
+        div.nav-navegacion{
+            background-color: chocolate;
+            @include sizes(50%, 40%);
+            .nav-menu{
+                @include sizes(100%, 100%);
+                .nav-menu-list{
+                    @extend .padre-flex-row-position;
+                    align-self: center;
+                    @include sizes(100%, 100%);
+                    justify-self: center;
+                    padding: 10px;
+                }
+            }
+        }
+        .nav-area{
+            @extend .padre-flex-row-position;
+            @include sizes(50%, 20%);
+            align-self: center;
+            justify-self: center;
+            background-color: cornflowerblue;
+            i{
+                align-self: center;
+                @include sizes(100%, 100%);
+                justify-self: center;
+                background-color: white;
+                padding: 20px;
+                border: none;
+                border-radius: 15px;
+            }
+        }
+    }  
+}

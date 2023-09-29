@@ -1,0 +1,181 @@
+/*reset*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer {
+  text-align: center;
+  height: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*Fuente*/
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url(../font/Poppins);
+  font-family: "Unna", serif;
+  src: url(../font/Unna);
+}
+/*Variables*/
+/*Modificar a futuro*/
+/*Extend estilos a heredar*/
+.padre-flex-row-position, .contenedor-footer .content-footer .content-footer-info .content-footer-info-pages .footer-info-pages, .contenedor-footer .content-footer .content-footer-redes .footer-redes .footer-redes-list, .contenedor-footer .content-footer, .nav-header .nav-content .nav-area, .nav-header .nav-content div.nav-navegacion .nav-menu .nav-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+/*Componentes de la pagina*/
+.nav-header {
+  font-family: "Poppins";
+  font-size: 20px;
+  color: black;
+}
+.nav-header a {
+  color: black;
+}
+.nav-header .nav-content {
+  background-color: aqua;
+  height: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-header .nav-content .nav-logo {
+  justify-self: start;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: bisque;
+  width: 20%;
+  height: 50%;
+}
+.nav-header .nav-content div.nav-navegacion {
+  background-color: chocolate;
+  width: 40%;
+  height: 50%;
+}
+.nav-header .nav-content div.nav-navegacion .nav-menu {
+  width: 100%;
+  height: 100%;
+}
+.nav-header .nav-content div.nav-navegacion .nav-menu .nav-menu-list {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  padding: 10px;
+}
+.nav-header .nav-content .nav-area {
+  width: 20%;
+  height: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  background-color: cornflowerblue;
+}
+.nav-header .nav-content .nav-area i {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  background-color: white;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+}
+
+.contenedor-footer {
+  font-family: "Poppins";
+  font-size: 20px;
+  color: black;
+}
+.contenedor-footer .content-footer {
+  background-color: cornflowerblue;
+  height: 110px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contenedor-footer .content-footer a {
+  color: black;
+}
+.contenedor-footer .content-footer .content-footer-redes {
+  background-color: darkolivegreen;
+  width: 20%;
+  height: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+}
+.contenedor-footer .content-footer .content-footer-redes .footer-redes {
+  width: 100%;
+  height: 100%;
+}
+.contenedor-footer .content-footer .content-footer-redes .footer-redes .footer-redes-list {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+}
+.contenedor-footer .content-footer .content-footer-copyright {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
+  height: 30%;
+}
+.contenedor-footer .content-footer .content-footer-info {
+  background-color: chocolate;
+  width: 40%;
+  height: 50%;
+}
+.contenedor-footer .content-footer .content-footer-info .content-footer-info-pages {
+  width: 100%;
+  height: 100%;
+}
+.contenedor-footer .content-footer .content-footer-info .content-footer-info-pages .footer-info-pages {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+}
+
+/*Para hacer responsive, esto debe ir al final*/
+/*Media Queries*/

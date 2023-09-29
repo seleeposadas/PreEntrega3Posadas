@@ -1,0 +1,14 @@
+@import "partials/_reset.scss";
+@import "partials/_fonts.scss";
+@import "partials/_variables.scss";
+@import "partials/_mixins.scss";
+@import "partials/_extend.scss";
+/*Componentes de la pagina*/
+@import "layout/navbar";
+@import "layout/footer";
+
+
+
+
+/*Para hacer responsive, esto debe ir al final*/
+@import "partials/queries";

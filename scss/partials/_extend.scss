@@ -1,0 +1,9 @@
+/*Extend estilos a heredar*/
+.padre-flex-row-position {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}

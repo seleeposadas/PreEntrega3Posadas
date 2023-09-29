@@ -1,0 +1,44 @@
+.contenedor-footer{
+    @include fuente('Poppins', $fontSizeChica, black);
+.content-footer{
+    @extend .padre-flex-row-position;
+    a {
+        color: black;
+    }
+    background-color: cornflowerblue;
+    height: 110px;
+    align-items: center;
+    .content-footer-redes{
+        background-color: darkolivegreen;
+        @include sizes(50%, 20%);
+        align-self: center;
+            justify-self: center;
+        .footer-redes{
+            @include sizes(100%, 100%);
+            .footer-redes-list{
+                @extend .padre-flex-row-position;
+                align-self: center;
+                @include sizes(100%, 100%);
+                justify-self: center;
+            }
+        }
+    }
+    .content-footer-copyright{
+        align-items: center;
+        @include sizes(30%,20%);
+    }
+    .content-footer-info{
+        background-color: chocolate;
+        @include sizes(50%, 40%);
+        .content-footer-info-pages{
+            @include sizes(100%, 100%);
+            .footer-info-pages{
+                @extend .padre-flex-row-position;
+                align-self: center;
+                @include sizes(100%, 100%);
+                justify-self: center;
+            }
+        }
+    }
+}
+}
