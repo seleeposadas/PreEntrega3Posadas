@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!--Font Awesome-->
+     <link
+     rel="stylesheet"
+     href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"
+     crossorigin="anonymous"
+   />
+    <title>Tienda de accesorios</title>
+   <script src="https://kit.fontawesome.com/efc9165130.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/style.css"/>
+    <title>Tienda de Accesorios - Inicio</title>
+  </head>
+  <body>
+    <header class="nav-header">
+      <nav class="nav-content padre-flex-row-position">
+        <div class="nav-logo">
+          <a class="navbar-logo" href="/index.html">
+            <img
+              src="../img/tienda_accesorios_logo-sinfondo.png"
+              alt="Logo de la tienda - mujer con collar y aros."
+            />
+          </a>
+        </div>
+        <div class="nav-navegacion">
+          <div class="nav-menu">
+            <ul class="nav-menu-list">
+              <li class="nav-menu-item"><a href="/index.html">INICIO</a></li>
+              <li class="nav-menu-item"><a href="./pages/#">TIENDA</a></li>
+              <li class="nav-menu-item"><a href="./pages/#">NOSOTROS</a></li>
+              <li class="nav-menu-item"><a href="./pages/#">CONTACTO</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav-area">
+          <div class="nav-area-login">
+            <a href="./pages/#" class="login"
+              ><span id="verOcultar"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                  /></svg></span
+            ></a>
+          </div>
+          <div class="nav-area-carrito">
+            <a href="./pages/#" class="carrito" aria-disabled="true" href="#" id="cartUpdate" data-bs-toggle="modal" data-bs-target="#cartModal"
+              ><span 
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 576 512"
+                 >
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                  <path
+                    d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                  /></svg></span
+            ></a>
+
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="carrito"></div>
+      
+      <div class="contenedor-principal">
+        <div class="container">
+          <div class="col-12 my-5">
+              <h1 class="violet-dark bold"></h1>
+              <h3 class="violet-light"></h3>
+          </div>
+          <div class="row">
+              <div id="no-products-message" class="text-center text-muted">
+                  No se encontraron productos.
+              </div>  
+              <div class="col-12 col-md-3 mb-3">
+                  <div id="sidebar">
+                      <h5>Filtrar por:</h5>
+                      <h4>Categoría</h4>
+                      <ul id="categoria-filtro">
+                      </ul>
+                      <h4>Rango de Precios</h4>
+                      <input type="number" id="precio-min" class="form-control" placeholder="Precio mínimo">
+                      <input type="number" id="precio-max" class="form-control" placeholder="Precio máximo">
+                      <div class="d-grid gap-2">
+                          <button id="aplicar-filtros" class="btn btn-block btn-sm btn-violet-light">Aplicar Filtros</button>
+                          <button id="limpiar-filtros" class="btn btn-sm btn-border-light">Limpiar Filtros</button>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="col-12 col-md-9">
+                  <h3>Productos</h3>
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2" id="productos">
+              </div>
+              </div>
+          </div>
+  <!-- Modal -->
+  <div class="modal fade" id="cartModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="cartModalLabel">Carrito de compras</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="modalCart">
+                  ...
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary btn-sm btn-violet" id="comprar">Comprar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+      </div>
+      
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="contenedor-footer">
+        <div class="content-footer">
+          <div class="content-footer-redes">
+            <div class="footer-redes">
+              <ul class="footer-redes-list">
+                <li class="footer-redes-item"><a href="http://#">F</a></li>
+                <li class="footer-redes-item"><a href="http://#">T</a></li>
+                <li class="footer-redes-item"><a href="http://#">I</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="content-footer-copyright">
+            <p class="footer-copyright">selene posadas</p>
+          </div>
+          <div class="content-footer-info">
+            <div class="content-footer-info-pages">
+              <ul class="footer-info-pages">
+                <li class="info-pages-item"><a href="http://#">Inicio</a></li>
+                <li class="info-pages-item"><a href="http://#">Contacto</a></li>
+                <li class="info-pages-item"><a href="http://#">Tienda</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYlT" crossorigin="anonymous"></script>
+    <script src="/js/tienda.js"></script>
+  </body>
+</html>

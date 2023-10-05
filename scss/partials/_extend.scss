@@ -7,3 +7,79 @@
     align-content: center;
     text-align: center;
 }
+
+.btn-ver-mas {
+    padding: 2px 15px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+   
+    @include fuente('Poppins', $fontSizeCelu, black);
+}
+
+/*
+.tarjeta-productos{
+    border: 1px solid black;
+    background-color: pink;
+    @include sizes(100%, 80%);
+    img{
+        @include sizes(60%, 85%);
+        @include max-sizes(300px, auto);
+    }
+    .tarjeta-producto-cuerpo{
+        border: 1px solid black;
+        @include sizes(40%, 100%);
+    }
+}*/
+#contenedorProductos{
+    @include flex(flex, row, center, center);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    //margin: 5px 20px;
+    @include fuente('Poppins', $fontSizeCelu - 3, black);
+
+}
+.tarjeta-productos {
+    @include flex(flex, column, center, center);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    @include sizes(90%, 17%);
+    @include fuente('Poppins', $fontSizeCelu - 3, black);
+    
+
+    img {
+        @include sizes(65%, auto);
+        @include max-sizes(300px, auto);
+        position: center;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        align-self: stretch;
+        justify-self: stretch;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        
+    }
+
+    .tarjeta-producto-cuerpo {
+        @include sizes(35%, 95%);
+        margin: 3px 8px;
+        padding: 2px;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        //border: 1px solid black;
+        h4{
+            //padding: 5px;
+        }
+    }
+}
+
+.btn-agregar-al-carrito {
+    padding: 2px 8px;
+    border-radius: 10px;
+    border: none;
+}

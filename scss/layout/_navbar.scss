@@ -4,17 +4,18 @@
         color: black;
     }
     .nav-content{
-        background-color: aqua;
+        background-color: #FACBEA;
         height: 110px;
         align-items: center;
         .nav-logo{
-            justify-self: start;
-            align-self: center;
-            background-color: bisque;
-            @include sizes(50%, 20%);
+            //justify-self: start;
+            //align-self: center;
+            @include sizes(60%, 20%);
+            img{
+                @include sizes(100%, auto);
+            }
         }
         div.nav-navegacion{
-            background-color: chocolate;
             @include sizes(50%, 40%);
             .nav-menu{
                 @include sizes(100%, 100%);
@@ -32,8 +33,7 @@
             @include sizes(50%, 20%);
             align-self: center;
             justify-self: center;
-            background-color: cornflowerblue;
-            i{
+            span{
                 align-self: center;
                 @include sizes(100%, 100%);
                 justify-self: center;

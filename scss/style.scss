@@ -6,8 +6,58 @@
 /*Componentes de la pagina*/
 @import "layout/navbar";
 @import "layout/footer";
+@import "layout/banner";
+@import "layout/categorias";
+@import "layout/newitems";
+@import "layout/banner-info-compra";
+@import "layout/banner-suscripcion";
+@import "layout/tienda";
 
 
+.contenedor-principal{
+    @include contenedor(50px);
+}
+
+#categoria-filtro {
+    list-style: none;
+    padding-left: 0;
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+}
+#modalCart {
+    img {
+        width: 45px;
+    }
+}
+
+.cart-sidebar {
+    width: 300px; /* Ancho del sidebar */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: -300px; /* Inicialmente, el sidebar está fuera de la vista */
+    background-color: white; /* Fondo del sidebar */
+    transition: right 0.3s ease;
+    box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5); /* Sombra para el sidebar */
+}
+
+.cart-sidebar.show {
+    right: 0; /* Cuando se muestra, el sidebar se desplaza hacia la izquierda */
+}
+
+.cart-sidebar-content {
+    padding: 20px;
+}
+
+.cart-sidebar-footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #f7f7f7; /* Fondo del pie de página */
+}
 
 
 /*Para hacer responsive, esto debe ir al final*/

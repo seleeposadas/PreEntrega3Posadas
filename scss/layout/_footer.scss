@@ -5,11 +5,10 @@
     a {
         color: black;
     }
-    background-color: cornflowerblue;
+    background-color: #D988B9;
     height: 110px;
     align-items: center;
     .content-footer-redes{
-        background-color: darkolivegreen;
         @include sizes(50%, 20%);
         align-self: center;
             justify-self: center;
@@ -28,7 +27,6 @@
         @include sizes(30%,20%);
     }
     .content-footer-info{
-        background-color: chocolate;
         @include sizes(50%, 40%);
         .content-footer-info-pages{
             @include sizes(100%, 100%);
